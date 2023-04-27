@@ -9,6 +9,7 @@
 
     --blanco: #f4f4f4;
     --negro: #000000;
+    --gris: #e2e9f9;
 }
 html{
     box-sizing: border-box;
@@ -21,6 +22,7 @@ body{
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
+    background-color: var(--gris);
 }
 
 /**Gobales**/
@@ -68,7 +70,7 @@ img{
 /**Header**/
 .header{
     background-image: url(../img/generacion.jpg);
-    height: 60rem;
+    height: 50rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;  /* doble center para que sea centrada horizontal y verticalmente*/
@@ -77,13 +79,14 @@ img{
 
 .header__texto{
     text-align: center;
-    color:var(--blanco);
+    color:var(--negro);
     margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
     .header__texto{
-    margin-top: 15rem;
+    margin-top: 10rem;
+     
     }
 }
 .barra{
@@ -97,7 +100,6 @@ img{
         
     }
 }
-
 
 
 .logo__img{
@@ -119,7 +121,8 @@ img{
     display: block;
     text-align: center;
     font-size: 1.8 rem;
-    color: var(--secundarioVerde);
+    color: var(--negro);
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
